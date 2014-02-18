@@ -7,11 +7,20 @@
 // @copyright  2014+, Phil Wolstenholme
 // ==/UserScript==
 
-jQuery(document).keydown(function(event) {
+function saveAndApprove() {
+	jQuery( ".tab-button-dd-submenu li a" ).first().click();
+}
 
+jQuery(document).keydown(function(event) {
     //19 for Mac Command+S
     if (!( String.fromCharCode(event.which).toLowerCase() == 's' && event.ctrlKey) && !(event.which == 19)) return true;
-    jQuery( ".tab-button-dd-submenu li a" ).first().click();
+	saveAndApprove();
     event.preventDefault();
     return false;
+});
+
+jQuery( ".tabButtons" ).append( "<div><button id='quickSaveApprove'>Press Ctrl+S or click here to Update and Approve</button></div>" );
+
+$( "#quickSaveApprove" ).click(function() {
+  saveAndApprove();
 });
