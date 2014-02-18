@@ -14,5 +14,6 @@ function URIasYouType() {
 }
 
 if( !jQuery("input[name='sName']").val() ) {
-    jQuery(this).keydown(URIasYouType);
+    jQuery("input[name='sName']").keypress(URIasYouType);
+    jQuery("input[name='sName']").blur(URIasYouType);
 }
