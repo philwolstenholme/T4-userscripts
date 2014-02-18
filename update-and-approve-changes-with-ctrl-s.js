@@ -21,6 +21,6 @@ jQuery(document).keydown(function(event) {
 
 jQuery( ".tabButtons" ).append( "<div><button id='quickSaveApprove'>Press Ctrl+S or click here to Update and Approve</button></div>" );
 
-$( "#quickSaveApprove" ).click(function() {
+jQuery( "#quickSaveApprove" ).click(function() {
   saveAndApprove();
 });
