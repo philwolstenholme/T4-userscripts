@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name       Update and Approve T4 content by pressing Ctrl-S
 // @namespace  http://wolstenhol.me
-// @version    0.1
+// @version    0.2
 // @description  Quickly publish T4 content
-// @match      https://sitemanager.manchester.ac.uk/terminalfour/SiteManager?ctfn=content&fnno=*&sid=*&svi=*
+// @include      */SiteManager?ctfn=content&fnno=*&sid=*&svi=*
 // @copyright  2014+, Phil Wolstenholme
 // ==/UserScript==
 
