@@ -43,3 +43,18 @@ jQuery( "#nextCid" ).click(function( event ) {
 	event.preventDefault();
 	takeMeTo(nextCid);
 });
+
+jQuery(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+            takeMeTo(previousCid);
+        break;
+
+        case 39: // right
+            takeMeTo(nextCid);
+        break;
+
+        default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+});

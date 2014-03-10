@@ -13,3 +13,11 @@ jQuery( "#useANewWindow" ).click(function( event ) {
 	jQuery( "#contentForm" ).attr( "target", "_blank" );
 	jQuery( ".tab-button-dd-submenu li a" ).first().click();
 });
+
+jQuery(document).keydown(function(event) {
+    //19 for Mac Command+S
+    if (!( String.fromCharCode(event.which).toLowerCase() == 'e' && event.ctrlKey)) return true;
+	jQuery( "#useANewWindow" ).first().click();
+	event.preventDefault();
+	return false;
+});
