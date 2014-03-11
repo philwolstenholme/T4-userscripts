@@ -5,6 +5,10 @@ Bookmarklets and userscripts to make using the TERMINALFOUR content management s
 
 Install using [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (Chrome) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox). These scripts can only emulate actions that an end user could perform, so should present no security risk, but are provided 'as is' and are used at your own risk.
 
+#### Alternative Chrome installation instructions
+
+Visit [chrome://chrome/extensions](chrome://chrome/extensions) and drag a script into the window. The scripts can be downloaded as a .zip from [https://github.com/pwolstenholme/T4-userscripts/archive/master.zip](https://github.com/pwolstenholme/T4-userscripts/archive/master.zip).
+
 Scripts available
 -----------------
 
