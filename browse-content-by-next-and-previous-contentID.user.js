@@ -44,16 +44,20 @@ jQuery( "#nextCid" ).click(function( event ) {
 	takeMeTo(nextCid);
 });
 
+
 jQuery(document).keydown(function(e) {
+    if (jQuery(e.target).closest("input,textarea")[0]) {
+        return;
+    }
     switch(e.which) {
         case 37: // left
             takeMeTo(previousCid);
-        break;
-
+            break;
+            
         case 39: // right
             takeMeTo(nextCid);
-        break;
-
+            break;
+            
         default: return; // exit this handler for other keys
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
