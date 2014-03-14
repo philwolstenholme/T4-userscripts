@@ -26,6 +26,18 @@ When creating a new section in T4, your output URI will be created automatically
 
 Working on a page and need to save your changes but want to keep on editing the page afterwards? This adds an option to your Save and Approve dropdown menu to '*Save to a new window*' (or you can press `Ctrl` + `E`). Selecting these options submits your changes to T4 but in a new window, so your modify content screen is not affected.
 
+### Use the [ACE](http://ace.c9.io) editor for making changes to raw HTML, CSS, JS or PHP
+
+Make editing or reviewing code in T4 much nicer with:
+* Syntax highlighting for JS, HTML, CSS and PHP
+* Function collapsing
+* Bracket and quote automatic closing
+* Automatic indentation/outdenting
+* Search and replace with regular expressions
+* Highlight matching brackets
+* Highlights matching variables, function names etc
+* Multiple cursors
+
 ### Browse content with next/previous buttons
 
 Just created a load of new content items and now have to work through them one by one making changes?
