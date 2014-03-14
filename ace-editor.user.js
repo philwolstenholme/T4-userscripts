@@ -7,7 +7,7 @@
 // @copyright  2014+, Phil Wolstenholme
 // ==/UserScript==
 
-if (jQuery('#t4_content_element_CodeBody').length === 1) {
+if (jQuery('#t4_content_element_CodeBody,#t4_content_element_PHPcontent').length === 1) {
 
 	jQuery.ajax({
 		url: '//ajaxorg.github.io/ace-builds/src-min-noconflict/ace.js',
@@ -17,9 +17,12 @@ if (jQuery('#t4_content_element_CodeBody').length === 1) {
 
 	function success() {
 
-		var textareaWidth = jQuery("#t4_content_element_CodeBody").css( "width" )
-		var textareaHeight = jQuery("#t4_content_element_CodeBody").css( "height" )
-		var textarea = jQuery('#t4_content_element_CodeBody').hide();
+        if (jQuery('#t4_content_element_CodeBody').length === 1) { var textareaTarget = '#t4_content_element_CodeBody'; }
+        if (jQuery('#t4_content_element_PHPcontent').length === 1) { var textareaTarget = '#t4_content_element_PHPcontent'; }
+        
+		var textareaWidth = jQuery(textareaTarget).css( "width" )
+		var textareaHeight = jQuery(textareaTarget).css( "height" )
+		var textarea = jQuery(textareaTarget).hide();
 
 		var d = document.createElement('div');
 		jQuery(d).attr( "id", "editor" );
