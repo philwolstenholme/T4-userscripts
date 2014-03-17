@@ -7,13 +7,13 @@ Install using [Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
 
 #### Alternative Chrome installation instructions
 
-Visit [chrome://chrome/extensions](chrome://chrome/extensions) and drag a script into the window. The scripts can be downloaded as a .zip from [https://github.com/pwolstenholme/T4-userscripts/archive/master.zip](https://github.com/pwolstenholme/T4-userscripts/archive/master.zip).
+Visit chrome://chrome/extensions and drag a script into the window. The scripts can be downloaded as a .zip from [https://github.com/pwolstenholme/T4-userscripts/archive/master.zip](https://github.com/pwolstenholme/T4-userscripts/archive/master.zip).
 
 Scripts available
 -----------------
 
 
-### Update and approve changes with one click or with `Ctrl` + `S`
+### [Update and approve changes with one click or with `Ctrl` + `S`](http://userscripts.org/scripts/show/416373)
 
 Stop using that fiddly dropdown menu to Save and Approve changes! This script adds a big, wide button to the top of your modify content screen that will Save and Approve your work with just one click. Even better, as long as you're not inside the TinyMCE rich text editor, then you can use the `Ctrl` + `S` shortcut to save and approve your work without even using the mouse.
 
