@@ -1,9 +1,16 @@
 T4-userscripts
 ===============
 
-Bookmarklets and userscripts to make using the TERMINALFOUR content management system more pleasant.
+Userscripts to make using the TERMINALFOUR content management system a little bit more pleasant.
 
-Install using [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (Chrome) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox). These scripts can only emulate actions that an end user could perform, so should present no security risk, but are provided 'as is' and are used at your own risk.
+These scripts can only emulate actions that an end user could perform, so should present no security risk, but are provided 'as is' and are used at your own risk. The cautious are encouraged to inspect the source of any script that they use.
+
+## How to install
+
+### Using greasemonkey or tampermonkey
+
+* Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (Chrome) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (Firefox)
+* When one of these extensions has been installed the scripts can be installed via [userscripts.org](http://userscripts.org/tags/t4userscripts). 
 
 #### Alternative Chrome installation instructions
 
@@ -25,7 +32,9 @@ When creating a new section in T4, your output URI will be created automatically
 
 Working on a page and need to save your changes but want to keep on editing the page afterwards? This adds an option to your Save and Approve dropdown menu to '*Save to a new window*' (or you can press `Ctrl` + `E`). Selecting these options submits your changes to T4 but in a new window, so your modify content screen is not affected.
 
-### [Use the ACE editor for making changes to raw HTML, CSS, JS or PHP](http://userscripts.org/scripts/show/416373)
+### Use the ACE editor to make editing raw HTML, CSS, JS or PHP nicer
+
+[Install via userscripts.org](http://userscripts.org/scripts/show/416373)
 
 Uses the [ACE](http://ace.c9.io) editor to make editing or reviewing code in T4 much nicer with:
 * Syntax highlighting for JS, HTML, CSS and PHP
