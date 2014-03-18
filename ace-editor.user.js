@@ -19,6 +19,7 @@ if (jQuery('#t4_content_element_CodeBody,#t4_content_element_PHPcontent').length
 
         if (jQuery('#t4_content_element_CodeBody').length === 1) { var textareaTarget = '#t4_content_element_CodeBody'; }
         if (jQuery('#t4_content_element_PHPcontent').length === 1) { var textareaTarget = '#t4_content_element_PHPcontent'; }
+        if (jQuery('#t4_content_element_HTMLcontent').length === 1) { var textareaTarget = '#t4_content_element_HTMLcontent'; }
         
 		var textareaWidth = jQuery(textareaTarget).css( "width" )
 		var textareaHeight = jQuery(textareaTarget).css( "height" )
@@ -29,7 +30,6 @@ if (jQuery('#t4_content_element_CodeBody,#t4_content_element_PHPcontent').length
 		jQuery(d).css( "width", textareaWidth );
 		jQuery(d).css( "height", textareaHeight );
 		jQuery( d ).appendTo( jQuery( textarea ).parent() );
-		//append to #t4_content_element_CodeBody parent div
 		
 		var editor = ace.edit("editor");
 		editor.getSession().setUseWorker(false);
@@ -41,7 +41,8 @@ if (jQuery('#t4_content_element_CodeBody,#t4_content_element_PHPcontent').length
 		  textarea.val(editor.getSession().getValue());
 		});
 		
-		var options = '<select id="mode" size="1"><option value="ace/mode/css">css</option><option value="ace/mode/html">html</option><option value="ace/mode/javascript" selected>js</option><option value="ace/mode/php">php</option></select>'
+        // quick and dirty way of generating a select element, should really do this via document.createElement but hey
+		var options = '<select id="mode" size="1"><option value="ace/mode/css">css</option><option value="ace/mode/html" selected>html</option><option value="ace/mode/javascript">js</option><option value="ace/mode/php">php</option></select>'
 		jQuery( options ).prependTo( jQuery( "#editor" ).parent() );
 		
 		jQuery('#mode').change (function (ev) {
