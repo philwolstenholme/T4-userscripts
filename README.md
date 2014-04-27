@@ -26,7 +26,7 @@ Stop using that fiddly dropdown menu to Save and Approve changes! This script ad
 
 ### Auto populate content output URIs as you type
 
-When creating a new section in T4, your output URI will be created automatically as you type. Spaces will be converted to hyphens and eny existing URIs will not be affected.
+When creating a new section in T4, your output URI will be created automatically as you type. Spaces will be converted to hyphens. Any existing URIs will not be affected.
 
 ### Save your changes without leaving the page
 
