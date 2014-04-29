@@ -7,7 +7,7 @@
 // @copyright  2014+, Phil Wolstenholme
 // ==/UserScript==
 
-jQuery(".tabButtons").prepend('<div id="tab-button-dd-menu-wrap-top" class="bulk-approve-button"><div><button style="cursor:pointer;cursor:hand;" type="submit">Appprove all between two checked items</button></div></div>');
+jQuery(".tabButtons").prepend('<div id="tab-button-dd-menu-wrap-top" class="bulk-approve-button"><div><button style="cursor:pointer;cursor:hand;">Select all between two checked items</button></div></div>');
 jQuery(".bulk-approve-button").hide();
 
 $checkboxes = jQuery("#tabs-1 form input[name='approval']:not([type=hidden])")
