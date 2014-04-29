@@ -24,4 +24,3 @@ jQuery( "#tabs-2 .tabButtons" ).first().append( "<button id='quickSaveApprove'>P
 jQuery( "#quickSaveApprove" ).click(function() {
   saveAndApprove();
 });
-
