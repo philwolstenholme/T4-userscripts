@@ -59,7 +59,7 @@ Make scanning across lists in T4 easier by giving odd and even rows a slightly d
 
 ### Bulk approve content
 
-The bookmarklet is for use on the T4 approve content screen. It allows the bulk approval of a large number of content items at once, which is useful when you have duplicated lots of content from one part of a site to another.
+The script affects the T4 approve content screen (URL ending in 'SiteManager?ctfn=status'). It allows the bulk selection of a large number of content items at once, which is useful when you have duplicated lots of content from one part of a site to another and need to move them from a pending status to an approved status.
 
 Usage
 
