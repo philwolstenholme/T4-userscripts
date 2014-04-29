@@ -3,7 +3,7 @@
 // @namespace  http://wolstenhol.me
 // @version    0.4
 // @description  Generates lowercase and SEO friendly URIs (for new sections) as you type, without affecting existing URIs
-// @include     */SiteManager?ctfn=hierarchy&fnno=10*
+// @include      *SiteManager?ctfn=hierarchy&fnno=10*
 // @copyright  2014+, Phil Wolstenholme
 // ==/UserScript==
 
