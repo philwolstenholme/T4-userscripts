@@ -5,6 +5,7 @@
 // @description 	Zebra stripe tables to make scanning across rows easier on the eye
 // @include      	*/SiteManager*
 // @exclude			*/SiteManager?ctfn=media*
+// @exclude			*/skin/*
 // @copyright  		Philip Wolstenholme
 // ==/UserScript==
 
