@@ -56,3 +56,15 @@ This script adds `<` (previous) and `>` (next) buttons to your modify content sc
 ### Make all T4 tables zebra striped
 
 Make scanning across lists in T4 easier by giving odd and even rows a slightly different colour.
+
+### Bulk approve content
+
+The script affects the T4 approve content screen (URL ending in 'SiteManager?ctfn=status'). It allows the bulk selection of a large number of content items at once, which is useful when you have duplicated lots of content from one part of a site to another and need to move them from a pending status to an approved status.
+
+Usage
+
+1. Select the checkbox for the first item of content you would like to approve
+1. Select the checkbox for the last item of content you would like to approve.
+2. Click the `Select all between two checked items`
+3. Review the selected items to make sure they are OK to be approved
+1. When you are ready you can click the standard `Approve` button to submit your changes
