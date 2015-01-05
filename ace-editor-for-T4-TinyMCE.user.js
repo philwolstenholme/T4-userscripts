@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       ACE editor for T4 TinyMCE
 // @namespace  http://wolstenhol.me
-// @version    0.2
+// @version    0.3
 // @description  Use ACE editor for HTML view within TinyMCE
 // @include      */skin/SM/static/common/tiny_mce/themes/advanced/source_editor.htm
 // @copyright  2014+, Phil Wolstenholme
@@ -16,7 +16,7 @@ scr.async = false;
 head.insertBefore(scr, head.firstChild);
 
 // Wait 0.25 of a second for jQuery to have loaded...
-var delay=25
+var delay=250;
 setTimeout(function(){
     // Load the ACE editor. Then set a callback to apply the editor to the page.
 	jQuery.ajax({
@@ -31,8 +31,8 @@ function success() {
     
     // target the plain old HTML textarea
     var textareaTarget = '#htmlSource';
-    var textareaWidth = jQuery(textareaTarget).css( "width" )
-    var textareaHeight = jQuery(textareaTarget).css( "height" )
+    var textareaWidth = jQuery(textareaTarget).css( "width" );
+    var textareaHeight = jQuery(textareaTarget).css( "height" );
     var textarea = jQuery(textareaTarget).fadeOut("fast");
     
     // create a shiny new ACE editor to replace it
@@ -55,7 +55,7 @@ function success() {
     });
     
     // quick and dirty way of generating a select element, should really do this via document.createElement but hey
-    var options = ' <select id="mode" size="1"><option value="ace/mode/css">css</option><option value="ace/mode/html" selected>html</option><option value="ace/mode/javascript">js</option><option value="ace/mode/php">php</option></select>'
+    var options = ' <select id="mode" size="1"><option value="ace/mode/css">css</option><option value="ace/mode/html" selected>html</option><option value="ace/mode/javascript">js</option><option value="ace/mode/php">php</option></select>';
     jQuery( options ).prependTo( jQuery( "#editor" ).parent() );
     
     jQuery('#mode').change (function (ev) {
