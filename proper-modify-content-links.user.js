@@ -13,7 +13,6 @@ jQuery('tr[id^="ReOrderable"]').each(function( index ) {
   var $tr = jQuery( this );
   var id = this.id.slice(-6);
   var editLink = '/terminalfour/SiteManager?ctfn=content&fnno=30&sid=' + sid + '&svi=hierarchy:false:20&cid=' + id;
-  console.log(editLink);
   var $target = $tr.find("td:nth-child(2) div");
   var editLinkText = $target.contents().get(0).nodeValue;
   $target.replaceWith( "<a href=\"" + editLink + "\">" + editLinkText + "</a>" );
