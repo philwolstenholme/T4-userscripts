@@ -52,9 +52,11 @@ Uses the [ACE](http://ace.c9.io) editor to make editing or reviewing code in T4 
 
 ### Browse content with next/previous buttons
 
+**This works using content IDs not the order of a section within T4, so this only works for moving between batches of content items that were created within seconds of each other.**
+
 Just created a load of new content items and now have to work through them one by one making changes?
 
-This script adds `<` (previous) and `>` (next) buttons to your modify content screen allowing you to skip forward and back. **It works using content IDs not the order of a section within T4, so this only works for moving between batches of content items that were created within seconds of each other**.
+This script adds `<` (previous) and `>` (next) buttons to your modify content screen allowing you to skip forward and back. 
 
 ### Make all T4 tables zebra striped
 
