@@ -20,7 +20,7 @@ function success() {
     if (jQuery('#t4_content_element_PHPcontent').length === 1) { var textareaTarget = '#t4_content_element_PHPcontent'; }
     if (jQuery('#t4_content_element_PHP').length === 1) { var textareaTarget = '#t4_content_element_PHP'; }
     if (jQuery('#t4CodeTemplateContent').length === 1) { var textareaTarget = '#t4CodeTemplateContent'; }
-    if (jQuery('#t4_content_element_PHP').length === 1) { var textareaTarget = '#t4CodeTemplateContent'; }
+    if (jQuery('#t4_content_element_PHP').length === 1) { var textareaTarget = '#t4_content_element_PHP'; }
     
     if(codemirrors[0]) { codemirrors[0].toTextArea(); }
     
