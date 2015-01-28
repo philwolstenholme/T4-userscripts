@@ -32,6 +32,10 @@ When creating a new section in T4, your output URI will be created automatically
 
 Working on a page and need to save your changes but want to keep on editing the page afterwards? This adds an option to your Save and Approve dropdown menu to '*Save to a new window*' (or you can press `Ctrl` + `E`). Selecting these options submits your changes to T4 but in a new window, so your modify content screen is not affected.
 
+### 'Proper' modify content links
+
+Rather than use a T4 specific function fired by an onClick event to take you to an modify content page, this creates a link with a regular href value. The advantage is that these can be opened in new tabs whereas links with the onClick="T4_ChangePage(...)" method can't.
+
 ### Use the ACE editor to make editing raw HTML, CSS, JS or PHP nicer
 
 [Install via userscripts.org](http://userscripts.org/scripts/show/416373)
